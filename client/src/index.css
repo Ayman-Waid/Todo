@@ -56,33 +56,7 @@ h4 {
 	box-shadow: 8px 8px var(--secondary);
 }
 
-.todo .checkbox {
-	width: 24px;
-	height: 24px;
-	border: 2px solid var(--secondary);
-	border-radius: 50%;
-	margin-right: 16px;
-	position: relative;
-	flex-shrink: 0;
-}
 
-.todo .checkbox::before {
-	content: "";
-	display: block;
-	width: 12px;
-	height: 12px;
-	background-color: var(--secondary);
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	transition: 0.3s;
-}
-
-.todo.is-complete .checkbox::before {
-	transform: translate(-50%, -50%) scale(1);
-}
 
 .todo .text {
 	flex: 1;
@@ -261,3 +235,58 @@ h4 {
 	left: 90%;
 	top:5%
   }
+  .hadden{
+	display: none;
+  }
+  .updatediv {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	z-index: 999;
+  }
+  
+  .updatediv h3 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 10px;
+	text-align: center;
+  }
+  
+  .updatediv input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .updatediv button {
+	background-color: #4DB6AC;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .updatediv button:hover {
+	background-color: #26A69A;
+  }
+  .updatediv p{
+	cursor: pointer;
+	color: #000;
+	transform: translate(100%,-300%);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+  }
+  
+  
+  
